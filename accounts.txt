@@ -1,0 +1,5 @@
+replace_this
+with_the_@s
+of_the_people
+you_want_to_retweet
+line_by_line
