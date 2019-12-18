@@ -28,8 +28,8 @@ print(accounts)
 accounts_file.close()
 for account in accounts:
        for tweet in tweepy.Cursor(api.user_timeline, id=account, tweet_mode="extended").items(2):
-           print(tweet.full_text)
-
+            
+           #Checks for the hashtag in the tweet before retweeting
            if '#alilqueer' in tweet.full_text:
                try:
                    print('\nRetweet Bot found tweet by @' + tweet.user.screen_name + '. ' + 'Attempting to retweet the following:')
